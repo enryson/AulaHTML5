@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> Atributos </title>
+		<meta name="description" content="Atributos HTML5">
+	</head>
+	
+	<body>
+		
+		<h2>Formularios</h2>
+		<form>
+			<label for="CEP">CEP:
+				<input name="CEP" id="CEP" required pattern="\d{5}-?\d{3}" />
+			</label>
+			<input type="submit" value="Enviar" />
+		</form>
+		
+		<form>
+			Password: <input type="password" name="pw" pattern=".{6,}" title="Six or more characters">
+			<input type="submit">
+		</form>
+		
+		<h2>Details</h2>
+		<details>  
+			<summary>Copiando <progress max=”39248” value=”14718”> 37,5%</summary>  
+			<dl>    
+				<dt>Tamanho total:</dt>    
+				<dd>39.248KB</dd>    
+				<dt>Transferido:</dt>    
+				<dd>14.718</dd>    
+				<dt>Taxa de transferência:</dt>    
+				<dd>127KB/s</dd>    
+				<dt>Nome do arquivo:</dt>    
+				<dd>HTML5.mp4</dd>  
+			</dl>
+		</details>
+			
+	</body>
+		
+</html>		
