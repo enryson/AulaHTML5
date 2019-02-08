@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+ 
+<html>
+ <head>
+  <title> Site do novato </title>
+  <meta name="description" content="Site de....">
+ </head>
+ 
+ <body>
+ 
+ <h2>Step</h2>
+ <h4>Number</h4>
+ <input name="valuex" type="number" value="12.4" step="0.2" min="0" max="20" />
+ <h4>Rager</h4>
+ <input name="valuex" type="range" value="12.4" step="0.2" min="0" max="20" />
+
+ <h2>Autofoucus</h2>
+ <input name="login" autofocus >
+ 
+ <h2>Placeholder</h2>
+ <input name="q" placeholder="Search here">
+ 
+ <h2>Required</h2>
+ <input name="login" required>
+ 
+ <h2>Maxlength</h2>
+ <input name="login" maxlength="5">
+ 
+ <h2>Pattern Attribute</h2>
+ <form>
+	 <label for="CEP">CEP:
+	 <input name="CEP" id="CEP" required pattern="\d{5}-?\d{3}" />
+	 </label>
+	 <input type="submit" value="Enviar" />
+ </form>
+ 
+ <form>
+	Password: <input type="password" name="pw" pattern=".{6,}" title="Six or more characters">
+	<input type="submit">
+</form>
+ 
+ </body>
+ 
+</html>
