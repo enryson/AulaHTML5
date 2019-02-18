@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Formularios </title>
+		<meta name="description" 
+			content="Formularios HTML5"
+			charset="UTF-8">
+	</head>
+	
+	<body>
+		<h1>Calculadora TOP</h1>
+		<img src="http://www.habbid.com.br/arquivos/pixelclub/pixelizacao/1334786035-pastor-metralhadora-manokicow.png" style="width: 10%; height: 10%">
+		<br></br>
+		<input id="numero1" required="required" pattern="[0-9]+" placeholder="entre com o 1º numero"> 
+		
+		<input id="numero2" required="required" pattern="[0-9]+" placeholder="entre com o 2º numero"> <br></br>
+		
+		<h2 id="resultado">resultado</h2>
+		
+		<input id="inres" placeholder="resultado" readonly="readonly"><br></br>
+		<input id="inres" placeholder="resultado" disabled="disabled">
+				
+		<br></br>
+		
+		<button type="button"
+		onclick="calculadora()">
+		Multiplica!</button>
+		
+		
+		
+	</body>
+	
+	<script>
+			
+			
+		function calculadora() {
+			var n1 = document.getElementById("numero1").value;
+			var n2 = document.getElementById("numero2").value;
+			
+			var res = n1*n2;
+			
+			document.getElementById('resultado').innerHTML = n1*n2;
+			
+			document.getElementById("inres").placeholder = res;
+		}
+	</script>
+</html>		

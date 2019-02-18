@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Formularios </title>
+		<meta name="description" 
+			content="Formularios HTML5"
+			charset="UTF-8">
+	</head>
+	
+	<body>
+		<h1>JavaScript de preguiçoso</h1>
+		
+		<p id="hora"></p>
+		
+		<button type="button"
+		onclick="document.getElementById('hora').innerHTML = Date()">
+		Sou preguiçoso pra olhar a hora no computador</button>
+		
+		<br></br>
+		
+		<button type="button"
+		onclick="horaPadawan()">
+		Sou preguiçoso pra olhar a hora no computador2</button>
+		
+		
+		
+	</body>
+	
+	<script>
+		function horaPadawan() { 
+			document.getElementById('hora').innerHTML = Date();
+		}
+		</script>
+</html>		
